@@ -1,1 +1,21 @@
 \chapter{Preface}
+
+This book is a companion to \emph{Quantum Mechanics in Simple Matrix Form} \cite{Jordan2005} by Thomas Jordan. Quantum mechanics was developed using to different, but equivalent mathematical formalisms: wave mechanics and matrix mechanics. Today many introductions to the subject follow the approach invented by Erwin Schr\"odinger and begin with waves, which requires knowledge of partial differential equiations. Using Jordan's book as a guide, we're going to follow in the footsteps of Werner Heisenberg and Max Born and develop quantum mechanics using matrix algebra.
+
+Matrix algebra is a nice way to learn quantum mechanics for a few reasons. Firstly, it requires a lower entry to barrier on the mathematical front. The arithmetic of matrices builds on addition and multiplication of real numbers. Secondly, matrix mechanics generalizes in a particularly convenient way. Unlike real numbers, matrix products do not always commute \sidenote{Remember this fact. Commutation is one of the great big ideas in quantum mechanics.}. That is, given any two real numbers $x$ and $y$, we can multiply $x$ by $y$ or multiply $y$ by $x$. Either way, we get the same result.
+
+$$ x\cdot y = y \cdot x $$
+
+Given two matrices $A$ and $B$, the product $A$ applied to $B$ is not generally the same as the product $B$ applied to $A$.
+
+$$ AB \neq BA $$
+
+You'll notice that I wrote \emph{applied to} instead of \emph{multiplied by}, when I talked about the product of the matrices $A$ and $B$. Matrices are examples of \emph{linear operators}. Over time we will come to think of linear operators as representing observable quantites in laboratory experiments such as position, velocity, or momentum.\sidenote{You can squirrel this idea away for now, too. Linear operators represent observable quantities. I promise it will make sense later. It won't now. But we haven't even started yet.} But for now, you can think of them as a generalization of real numbers in which the order of operations matters. The operator formalism of quantum mechanics puts the commutation of observable quantities front and center. And to study quantum field theory, we'll need to graduate from state vectors to operators.
+
+While Jordan wrote his book to be accessible to students with little mathematical background, it moves pretty quickly. He requires a great deal of what people often call ``mathematical maturity.''\sidenote{Said another way, there's very little that is simple in the book, even though it's written in ``simple matrix form.''} This companion text aims to fill in some of the gaps that Jordan must step over. Along the way, we'll explore some of the mathematical structures associated with the physics that Jordan doesn't have the time to introduce himself. He used his book to teach a single-semester course, and it's already packed with more than enough to fill a full semester.
+
+I have included new exercises to flesh out some of the concepts that Jordan covers. Many of these problems are meant to provide extra practice to develop intuition with the material. Others take us too far afield ever to have been included in the original text. Exercises that appear inline with the main text serve as a means to check your understanding as you go along. Those at the end of the chapters will advance your understanding further and are meant to take you longer to complete.
+
+Solutions to all of the problems in this book and in \emph{Quantum Mechanics in Simple Matrix Form} appear in the second part of this book. But don't peek at an answer until you've given it a good college try! Problem solving is hard work. In a research laboratory there is no answer key. Oftentimes, there is no clear answer at all. So appoach the exercises as bite-sized opportunities to become a better, thinking scientist.
+
+So without anymore ado, let's get to it.
