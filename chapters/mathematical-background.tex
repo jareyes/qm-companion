@@ -1,0 +1,50 @@
+\setchapterpreamble[u]{\margintoc}
+\chapter{Mathematical Background}
+
+The character of quantum mechanics is to a large extent dependent on the mathematics used to describe it. At the end of the day, all theory needs to be supported by experimental evidence. That is, by actual measurements. We quantify our measurements with numbers to speak in a standardized, precise way. When we ask questions like, ``How long?'' or ``How much?'', we typically use numbers to give an answer.
+
+In quantum mechanics, we will use increasingly sophisicated mathematical constructs to describe the world around us, including experiments physicists perform. Some of properties of numbers that we take for granted will remain, while others will disappear. Here we begin with a exploration of two particular useful number systems: the \emph{real} and the \emph{complex} numbers.
+
+\section{Real Numbers}\marginnote{Real numbers. Communitivity, distributivity. (Figures showing geometric equivalence.) \textbf{Exercises.} Field properties. Example, the real numbers. Binary. Finite fields. $\mathbf{Z}_2$. $V_4$. \textbf{Exercises.} Cartesian plane. Absolute value. Distance. Circles. \textbf{Exercises.}}
+
+We begin with an old friend, the \emph{real line}. When we talk about the real line, we're really just talking about an ordinary geometric line. To define a sense of order, we label the points on the line with the set $\mathbf{R}$ of all \emph{real numbers}. That is, we identify each point on the line with a unique real number. And  we often speak as if the numbers were actually on a line, and as if the points on the line are actually numbers.
+
+\begin{figure}[h]
+\input{figures/mathematical-background/real-line.tex}
+\caption{The real line}
+\end{figure}
+
+You may be wondering what makes the real numbers ``real''? The term real is unfortunate. The existence of real numbers is no more or less certain than any other kind of number---including the so-called imaginary numbers that we will meet later in this chapter. The philosopher Ren\'e Descartes came up with the term while investigating roots of polynomials in the 17th century. He was trying to distinguish different kinds of solutions. Since then, the name stuck. And it has confused students of mathematics ever since.
+
+In some sense, the complex numbers, which include the combination of real and imaginary numbers, are much more real---or at least more complete---than the real numbers alone. The \emph{Fundamental Theorem of Algebra} guarantees that all polynomials of a single variable have a solution which is complex number. For example, the equation
+
+\begin{equation}\label{eqn:mb-imaginary} x^2+ 1 = 0 \end{equation}
+
+has no real number solution. We will see later that there is a complex number solution to that equation. Because complex solutions always exist for single-variable polynomials with complex coefficients, we say that the complex numbers are \emph{algebraically closed}.\sidenote{We will see a more examples of numbers that are closed under other operations soon.} The real numbers are not. The fact that equation \ref{eqn:mb-imaginary} has no real number solution is witness to the fact that the real numbers are not algebraically closed.
+
+While the real line may look simple, do not be fooled. Its internal structure is incredibly complicated. For now we'll call out a few subsets of $\mathbf{R}$ that are so commonly used that they get their own symbols as well. They are the natural numbers $\mathbf{N}$, the integers $\mathbf{Z}$, and the rational numbers $\mathbf{Q}$.\sidenote{The \emph{Zahlen} means ``number'' in German. German mathematicians use $\mathbf{Z}$ to refer to integers. The rest is history.}\sidenote{Rational numbers are ratios of integers, AKA \emph{quotients}.}
+
+\subsection{Natural Numbers}
+The natural numbers $\textbf{N}$ are also sometimes called the counting numbers. They are the ones we first learn. They start 1, 2, 3, and continue that way one at a time.\sidenote{Sometimes people start the natural numbers at zero instead of one. It doesn't make much difference.} There is no largest natural number. They are infinite, which means that even these seemingly simple numbers are already quite complicated.
+
+In ancient times, the Greeks restricted themselves to the numbers that could be constructed using a compass and an unmarked straight edge. They began with the natural numbers. Figure \ref{fig:mb-natural-numbers-construction} shows how you can produce any natural number, provided you have the time and paper.
+
+First, starting a point, draw line segment with the straight edge. This line segment defines our unit length. The problem is how to produce another line segment of the same length as one you just drew. The straight edge, remember, is unmarked. So it doesn't help us out too much. The trick is to use the compass. For convenience, mark the starting point of line with the suggestive label \textsf{0} and the point at the other end with the label \textsf{1}. We know that radii of a circle have the same length. So if we draw a circle centered at \textsf{1} that passes through \textsf{0}, it will contain all points that are all equally far away from \textsf{1} as the point \textsf{0} is. Breakthrough!
+
+\begin{marginfigure}
+  \input{figures/mathematical-background/natural-numbers-construction.tex}
+  \caption{\label{fig:mb-natural-numbers-construction} Construction of the natural numbers}
+\end{marginfigure}
+
+Now we can extend the original line segment to meet the circle. The point of their intersection is exactly one unit length away from the point \textsf{1}. Mark this point with the suggestive label \textsf{2}. We can continue this way as many times as we like---geometric line segments stretch as far as we care to imagine. After repeating the process $n$ times, we have constructed a line segment $n$ units long. Do it once again, and we're at $n+1$.
+
+Because the straight edge had no unit measure on it, the results they produced are \emph{coordinate-free}; that is, true no matter which coordinates we choose, be it inches, centimeters, or pikas.
+
+Then fractions. Pythagoras' cult discovered the irrationality of square root of two. Are there any holes? Answer to this question can be found in the study of real analysis. Basically all the numbers we would ever want are there. But special note: the reals are not the only completion of $\mathbf{Q}$. See, for example, the $p$-adics. For now, the real line will suffice.  We will review a few properties of the real numbers.
+
+Can we say \emph{the} real line with certainty? Field-preserving homomorphisms. Affine group. But real proof requires a proper construction, e.g., Dedekind cuts.
+
+
+\section{Complex Numbers}
+
+% \marginnote{\textsf{Jordan Chapter 2: Imaginary Numbers}}

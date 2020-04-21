@@ -1,0 +1,28 @@
+\begin{scaletikzpicturetowidth}{\textwidth}
+\begin{tikzpicture}[scale=\tikzscale]
+\foreach \x/\xcolor in {3.75/cyan, 6.25/black}
+  \draw[shift={(\x,1)}, thick, color=\xcolor] (0,0) circle (1);
+
+\draw[shift={(6.25,1)}, thick, color=cyan] (0,0) -- (0,1);
+\draw[shift={(6.25,1)}, color=cyan, fill=cyan] (0,1) circle (1pt);
+
+\foreach \x/\xcolor in {1.5/cyan, 3.75/black, 6.25/black} {
+  \draw[shift={(\x,0)}, thick, color=\xcolor] (0,0) -- (0,1);
+  \draw[shift={(\x,0)}, color=\xcolor, fill=\xcolor] (0,1) circle (1pt);
+}
+
+\foreach \x/\y in {0/0, 1.5/1, 6.25/2}
+  \draw[shift={(\x,\y)}, fill=cyan, color=cyan] (0,0) circle (1pt) node[above] {\small\textsf{\y}};
+
+\foreach \x in {1.5, 3.75, 6.25}
+  \draw[shift={(\x,0)}, fill=black] (0,0) circle (1pt);
+
+\draw[shift={(8.25,0)}, thick] (0,4) circle (1) node[above, left] {\small\textsf{n}};
+\draw[shift={(8.25,0)}, thick, color=cyan] (0,4) -- (0,5);
+\draw[shift={(8.25,0)}, color=cyan, fill=cyan] (0,5) circle (1pt) node[above] {\small\textsf{n+1}};
+\draw[shift={(8.25,0)}, thick] (0,0) -- (0,4);
+\foreach \x in {0,1,3,4}
+  \draw[shift={(8.25,0)}, fill=black] (0,\x) circle (1pt);
+
+\end{tikzpicture}
+\end{scaletikzpicturetowidth}
