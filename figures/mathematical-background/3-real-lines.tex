@@ -1,0 +1,25 @@
+\begin{scaletikzpicturetowidth}{\textwidth}
+\begin{tikzpicture}[scale=\tikzscale]
+\foreach \x in {0, 1, 2}
+  \draw[shift={(0,\x)}, thick, <->] (0,0) -- (6,0);
+
+\foreach \x in {-2,-1,2}
+  \draw[shift={(3+\x,2)}, fill=black] (0,0) circle (1pt) node[below=3pt] {\small$\x$};
+\draw[shift={(3,2)}, color=cyan, thick] (0,0) -- (1,0);
+\draw[shift={(3,2)}, color=black, fill=black] (0,0) circle (1pt) node[below=3pt] {\small$0$};
+\draw[shift={(3,2)}, color=black, fill=black] (1,0) circle (1pt) node[below=3pt] {\small$1$};
+
+\foreach \x/\xlabel in {-2.5/-2, -1.25/-1, 2.5/2}
+\draw[shift={(3+\x,1)}, fill=black] (0,0) circle (1pt) node[below=3pt] {\small$\xlabel$};
+\draw[shift={(3,1)}, color=cyan, thick] (0,0) -- (1.25,0);
+\draw[shift={(3,1)}, color=black, fill=black] (0,0) circle (1pt) node[below=3pt] {\small$0$};
+\draw[shift={(3,1)}, color=black, fill=black] (1.25,0) circle (1pt) node[below=3pt] {\small$1$};
+
+\foreach \x/\xlabel in {-2.5/2, 0.5/-1, 1.5/-2, 2.5/-3}
+  \draw[shift={(3+\x,0)}, fill=black] (0,0) circle (1pt) node[below=3pt] {\small$\xlabel$};
+\draw[shift={(3,0)}, color=cyan, thick] (-0.5,0) -- (-1.5,0);
+\draw[shift={(3,0)}, color=black, fill=black] (-0.5,0) circle (1pt) node[below=3pt] {\small$0$};
+\draw[shift={(3,0)}, color=black, fill=black] (-1.5,0) circle (1pt) node[below=3pt] {\small$1$};
+
+\end{tikzpicture}
+\end{scaletikzpicturetowidth}
