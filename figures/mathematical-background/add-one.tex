@@ -1,0 +1,15 @@
+\begin{scaletikzpicturetowidth}{\textwidth}
+\begin{tikzpicture}[scale=\tikzscale]
+\foreach \x in {0, 1.5}
+  \draw[shift={(0,\x)}, thick, <->] (-3,0) -- (3,0);
+
+  \foreach \x in {-2,...,2}
+    \draw[shift={(\x,1.5)}, fill=black] (0,0) circle (1pt) node[below] {\small $\x$};
+  \foreach \x in {-1,...,3}
+    \draw[shift={(\x-1,0)}, fill=black] (0,0) circle (1pt) node[below] {\small $\x$};
+
+% \node [draw, color=cyan] (A) at (4,5) {AAAA};
+\node[color=cyan, above=3pt] (N) at (-2.5,1.5) {\small $n$};
+\node[color=cyan] [below=1.2 of N.west, anchor=west] {\small $f(n) = n + 1$};
+\end{tikzpicture}
+\end{scaletikzpicturetowidth}
